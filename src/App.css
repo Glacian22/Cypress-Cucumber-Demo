@@ -1,10 +1,49 @@
 .App {
   text-align: center;
+  background-image: url('./Lever.png');
+  background-size: cover;
+  height: 100vh;
+  width: 100%
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+select {
+  font-size: 4rem;
+  margin: 3rem
+}
+
+input, label {
+  font-size: 2rem;
+  padding: 1rem
+}
+
+input {
+  height: 2rem;
+  width: 2rem
+}
+
+label {
+  color: white;
+  font-weight: bold
+  /* background-color: white; */
+}
+
+#pit-wrapper {
+  position: relative;
+  right: 30%;
+  margin: 1rem;
+  color: white;
+  font-size: 2rem
+}
+
+#alligator-pit {
+  height: 15rem;
+  width: 15rem;
+  background-color: greenyellow;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -22,17 +61,4 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
