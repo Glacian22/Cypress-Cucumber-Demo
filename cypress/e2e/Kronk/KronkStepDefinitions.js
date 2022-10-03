@@ -20,3 +20,20 @@ Then('I fall into the alligator pit', () => {
     cy.get('[data-cy=alligatorPit]').invoke('text')
     .should('equal', 'Yzma')
 })
+
+// second scenario
+
+When('I bring the llama', () => {
+    cy.get('[data-cy=companion')
+    .select('Llama')
+})
+
+And('he pulls the right lever', () => {
+    cy.get('[type="radio"]')
+    .check('right')
+})
+
+Then('No one falls into the pit', () => {
+    cy.get('[data-cy=alligatorPit]').invoke('text')
+    .should('equal', '')
+})
